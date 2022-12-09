@@ -9,7 +9,6 @@
 
  body {
      background-color: #F2EAE2;
-     /* font-family: 'Fraunces', serif; */
      font-family: 'Montserrat', sans-serif;
  }
 
@@ -26,14 +25,18 @@
      border-radius: 10px 10px 0 0;
  }
 
+ .desktop {
+     display: none;
+ }
+
  .col-right {
-     padding: 25px;
+     padding: 20px 25px 25px 25px;
  }
 
  .category {
      text-transform: uppercase;
      color: #6C7289;
-     font-size: 14px;
+     font-size: 12px;
      letter-spacing: 5px;
      margin: 5px 0;
  }
@@ -43,20 +46,20 @@
      font-size: 36px;
      line-height: 100%;
      color: #1C232B;
-     margin: 20px 0;
+     margin: 15px 0;
  }
 
  h1~p {
      color: #6C7289;
      font-size: 16px;
-     line-height: 155%;
+     font-weight: 500;
+     line-height: 160%;
  }
 
  .current-price {
      font-family: 'Fraunces', serif;
      color: #3D8168;
      font-size: 36px;
-     /* flex-shrink: 1; */
  }
 
  .original-price {
@@ -64,7 +67,6 @@
      font-size: 16px;
      align-self: center;
      margin-left: 25px;
-     /* flex-shrink: 1; */
  }
 
  .price {
@@ -74,14 +76,14 @@
 
  button {
      width: 100%;
+     border: none;
      font-size: 14px;
      background-color: #3D8168;
-     padding: 18px 0;
+     padding: 15px 0 12px 0;
      color: #FFFFFF;
      font-weight: 700;
      border-radius: 10px;
      letter-spacing: 1px;
-     position: relative;
      cursor: pointer;
  }
 
@@ -90,15 +92,40 @@
 
  }
 
- button::before {
-     content: '';
-     width: 30px;
-     height: 16px;
-     position: absolute;
-     top: 35%;
-     left: 28%;
-     background-image: url(../images/icon-cart.svg);
-     background-size: contain;
-     background-repeat: no-repeat;
+ .icon {
+     width: 20px;
+     height: 20px;
 
+ }
+
+ .add-btn {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ @media only screen and (min-width: 1440px) {
+
+     .mobile {
+         display: none;
+     }
+
+     .desktop {
+         display: inline-block;
+         border-radius: 10px 0 0 10px;
+     }
+
+     .card {
+         display: flex;
+         max-width: 600px;
+     }
+
+     .col-right {
+         max-width: 300px;
+         font-size: 18px;
+     }
+
+ }
+
+ .attribution {
+     text-align: center;
  }
