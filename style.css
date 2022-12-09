@@ -12,11 +12,20 @@
      font-family: 'Montserrat', sans-serif;
  }
 
+ /* .container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ } */
+
  .card {
      background-color: #FFFFFF;
      max-width: 375px;
      border-radius: 10px;
-     margin: 30px auto auto auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
  }
 
  .col-left {
